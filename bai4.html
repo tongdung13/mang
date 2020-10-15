@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="a" type="text"/>
+    <button type="button" onclick="check()">Result</button>
+</form>
+<p id="kq"></p>
+<script>
+    function check() {
+        let array = ["home", "baby", "you", "i", "cake"];
+        let num = ["ngôi nhà", "em bé", "bạn", "tôi", "bánh"];
+        let c = document.getElementById("a").value;
+        let b = 0;
+
+        for (let i =0; i < num.length; i++) {
+            if (c === array[i]) {
+                (b = num[i])
+                document.getElementById("kq").innerHTML ="Result:" + b;
+                }else {
+                document.getElementById("kq").innerHTML= "Result:" + "không tìm thấy";
+            }
+
+            }
+    }
+</script>
+</body>
+</html>
